@@ -1,0 +1,11 @@
+*.pyc
+*.pyo
+
+*.class
+
+*.swp
+*.swo
+
+build/*
+*.egg-info
+*.~lock*
