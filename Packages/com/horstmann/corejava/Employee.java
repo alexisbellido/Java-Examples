@@ -1,6 +1,8 @@
+package com.horstmann.corejava;
+
 import java.util.*;
 
-class Employee
+public class Employee
 {
     public Employee()
     {

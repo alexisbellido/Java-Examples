@@ -1,8 +1,10 @@
+import com.horstmann.corejava.Employee;
+
 public class EmployeeTest
 {
     public static void main(String[] args)
     {
-        System.out.println("The code will go here");
+        System.out.println("The code will go here, Employee class will come from package com.horstmann.corejava");
 
         // fill array with Employee objects
         Employee[] staff = new Employee[3];
