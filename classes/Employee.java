@@ -11,6 +11,16 @@ class Employee
         hireDay = calendar.getTime();
     }
 
+    public static void main(String[] args)
+    {
+        System.out.println("I can run unit tests for the Employee class here");
+    }
+
+    public int getId()
+    {
+        return id;
+    }
+
     public String getName()
     {
         return name;
@@ -23,7 +33,8 @@ class Employee
 
     public Date getHireDay()
     {
-        return hireDay;
+        // return a clone of a mutable object to avoid breaking encapsulation
+        return (Date) hireDay.clone();
     }
 
     public void raiseSalary(double byPercent)
@@ -32,7 +43,21 @@ class Employee
         salary += raise;
     }
 
+    public void setId()
+    {
+        id = nextId;
+        nextId++;
+    }
+
+    public static int getNextId()
+    {
+        return nextId; // returns static field
+    }
+
     private String name;
     private double salary;
     private Date hireDay;
+    private int id;
+    private static int nextId = 1;
+    public static final double version = 1.25;
 }

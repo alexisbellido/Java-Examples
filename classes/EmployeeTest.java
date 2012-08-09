@@ -11,12 +11,16 @@ public class EmployeeTest
 
         for (Employee e : staff)
         {
+            e.setId();
             e.raiseSalary(5);
         }
 
         for (Employee e : staff)
         {
-            System.out.println("name=" + e.getName() + ", salary=" + e.getSalary() + ",hireDay=" + e.getHireDay());
+            System.out.println("id=" + e.getId() + " name=" + e.getName() + ", salary=" + e.getSalary() + ",hireDay=" + e.getHireDay());
         }
+
+        System.out.println("Employee class version: " + Employee.version);
+        System.out.println("Employee next id: " + Employee.getNextId());
     }
 }
