@@ -48,6 +48,7 @@ public class MyTest
         builder.append(myLetter);
         String completedString = builder.toString();
         System.out.println(builder);
+        */
 
         Scanner in = new Scanner(System.in);
 
@@ -58,7 +59,6 @@ public class MyTest
         int yourAge = in.nextInt();
 
         System.out.println("Hello " + yourName + "!, you are " + yourAge + " years old.");
-        */
 
         double x = 1000.0 / 3.0;
         System.out.println(x);
@@ -67,6 +67,9 @@ public class MyTest
         System.out.printf("Hello %s, next year you will be %d \n", "Mike", 23);
         System.out.printf("%1$s %2$tB %2$te, %2$tY \n", "Due date:", new Date());
         System.out.printf("%s %tB %<te, %<tY \n", "Again, due date:", new Date());
+
+        String msg = String.format("the x is %8.2f \n", x);
+        System.out.println(msg);
 
     }
 
