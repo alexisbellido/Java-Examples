@@ -12,8 +12,8 @@ public class MyTest
         double salary;
         int age = 42;
         int num = 81;
-        final double PI = 3.14; // This is a constant
 
+        final double PI = 3.14; // This is a constant
         salary = 8800.50;
         Size s = Size.SMALL;
         String greeting = "hello";
@@ -33,6 +33,7 @@ public class MyTest
         String ss = greeting.substring(0, 3);
         System.out.println(ss);
 
+        System.out.println("test");
         System.out.println("hello".equals(greeting));
         System.out.println("NOhello".equals(greeting));
 
@@ -49,6 +50,8 @@ public class MyTest
         String completedString = builder.toString();
         System.out.println(builder);
         */
+        
+        System.out.printf("hola %d", 1);  
 
         Scanner in = new Scanner(System.in);
 
