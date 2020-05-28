@@ -5,7 +5,7 @@ Java
 
 .. code :: bash
 
-    $ docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:15-slim-buster bash
+    $ docker run --rm -it -v "$PWD":/usr/src/myapp -w /usr/src/myapp openjdk:14-slim-buster bash
 
 
 `Oracle JDK <https://hub.docker.com/_/oracle-jdk>`_. Requires docker login before pulling.
